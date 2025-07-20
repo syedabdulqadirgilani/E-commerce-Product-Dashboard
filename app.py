@@ -35,7 +35,7 @@ st.title("E-commerce Product Dashboard")
 st.write("Enter a demo e-commerce URL to fetch product data with a interface.")
 
 # Input
-url = st.text_input("Enter E-commerce URL", "https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops")
+url = st.text_input("Enter E-commerce URL")
 
 # Scrape function
 @st.cache_data(ttl=300)
