@@ -32,12 +32,12 @@ st.markdown("<div class='main'>", unsafe_allow_html=True)
 
 # Title and description
 st.title("E-commerce Product Dashboard")
-st.write("Enter a demo e-commerce URL to fetch product data with a beautiful interface.")
+st.write("Enter a demo e-commerce URL to fetch product data with a interface.")
 
-# 📥 Input
+# Input
 url = st.text_input("Enter E-commerce URL", "https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops")
 
-# 🔍 Scrape function
+# Scrape function
 @st.cache_data(ttl=300)
 def scrape_products(url):
     headers = {'User-Agent': 'Mozilla/5.0'}
